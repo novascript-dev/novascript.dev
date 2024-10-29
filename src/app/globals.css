@@ -8,22 +8,16 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --primary: rgb(33, 27, 23);
+  --secondary: rgb(229, 125, 144);
+  --soft-white: rgb(245, 245, 245);
+  --soft-pink: #f2ced8;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @layer utilities {
